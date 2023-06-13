@@ -1,0 +1,25 @@
+*{
+    color: #585858;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+html{
+    font-size: 16px; /* rem = root em  */
+}
+
+body{
+    font-family: Roboto;
+}
+
+.wrap{
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .wrap{
+        width: 1200px;
+        horiz-align: center;
+        margin: auto;
+    }
+}

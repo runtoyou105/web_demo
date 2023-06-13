@@ -1,0 +1,99 @@
+nav.main-nav{
+    background-color: #35bcaf;
+    width: 100%;
+    margin: 0;
+    /*height: 42px;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#navbarScroll{
+    background-color: #35bcaf;
+}
+
+.container-fluid{
+    padding: 0px;
+}
+
+@media (min-width: 576px) {
+    nav.main-nav {
+        position: inherit;
+    }
+}
+
+/*------------*/
+.navbar-toggler{
+    color: white;
+    outline: none;
+    border: none;
+    box-shadow: none !important;
+}
+
+nav.navbar{
+    background-color: transparent;
+    font-size: 0.9rem;
+    padding: 0px;
+}
+
+.nav-item{
+    padding-right: 30px;
+    padding-left: 10px;
+    border: none;
+    /*height: 100%;*/
+
+    border-bottom: solid 1px rgb(88, 88, 88) ;
+}
+.nav-item .nav-link{
+}
+
+.nav-item:hover > .dropdown-menu{
+    display: block !important;
+}
+
+.dropdown-menu{
+    margin-top: 0px;
+    margin-left: -10px;
+    border: none;
+
+}
+
+.nav-link{
+    padding: 10.5px 20px;
+    color: white;
+}
+.nav-link:hover{
+    color: white;
+    background-color: #1d1d1d;
+}
+
+.nav-link:focus{
+    color: white;
+}
+
+.nav-link i{
+    color: white;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+}
+
+.dropdown-item{
+    background-color: #35bcaf;
+    position: relative;
+    display: block;
+    font-size: 14px;
+    font-family: Roboto;
+    padding: 11px 20px;
+    font-weight: 400;
+    /*--bs-dropdown-link-active-bg: black;*/
+    /*--bs-dropdown-link-hover-bg: black;*/
+    color: white;
+}
+.dropdown-item:hover, .nav-item:hover{
+    background-color: #1d1d1d;
+    color: white;
+}
+
