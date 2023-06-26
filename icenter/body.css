@@ -1,3 +1,9 @@
+html{
+    overflow-x: hidden;
+}
+body{
+    zoom: -1;
+}
 element.style {
     left: -10px;
     bottom: 40px;
@@ -12,23 +18,35 @@ element.style {
     border: 2px solid rgba(30, 30, 30, 0.4);
     border-radius: 100%;
     height: 100px;
-    left: 0px;
+    left: 1px;
     opacity: 0.1;
     position: absolute;
-    top: 0px;
+    top: 1px;
     transform-origin: 50% 50% 0;
     transition: all 0.5s ease 0s;
     width: 100px;
 }
 .suntory-alo-ph-img-circle {
-    /* animation: 1s ease-in-out 0s normal none infinite running suntory-alo-circle-img-anim; */
+
     border: 2px solid transparent;
     border-radius: 100%;
     height: 50px;
-    left: 25px;
+    left: 0.75rem;
     opacity: 0.7;
     position: absolute;
-    top: 25px;
+    top: 0.75rem;
+    transform-origin: 50% 50% 0;
+    width: 50px;
+}
+.img-circle{
+    animation: 1s ease-in-out 0s normal none infinite running suntory-alo-circle-img-anim;
+    border: 4px solid  blue;
+    border-radius: 100%;
+    height: 50px;
+    left: 0.75rem;
+    opacity: 0.7;
+    position: absolute;
+    top: 0.75rem;
     transform-origin: 50% 50% 0;
     width: 50px;
 }
@@ -43,7 +61,7 @@ element.style {
 }
 .suntory-alo-ph-circle-fill {
     animation: 2.3s ease-in-out 0s normal none infinite running suntory-alo-circle-fill-anim;
-    border: 2px solid transparent;
+    border: 2px solid #4a90e2;
     border-radius: 100%;
     height: 70px;
     left: 15px;
@@ -52,4 +70,223 @@ element.style {
     transform-origin: 50% 50% 0;
     transition: all 0.5s ease 0s;
     width: 70px;
+}
+@keyframes  suntory-alo-circle-anim{
+    
+
+0% {
+    opacity: 0.1;
+    transform: rotate(0deg) scale(0.5) skew(1deg);
+}
+30% {
+    opacity: 0.5;
+    transform: rotate(0deg) scale(0.7) skew(1deg);
+}
+100% {
+    opacity: 0.6;
+    transform: rotate(0deg) scale(1) skew(1deg);
+}
+}
+@keyframes suntory-alo-circle-fill-anim{
+0% {
+    opacity: 0.2;
+    transform: rotate(0deg) scale(0.7) skew(1deg);
+}
+50% {
+    opacity: 0.2;
+    transform: rotate(0deg) scale(1) skew(1deg);
+}
+100% {
+    opacity: 0.2;
+    transform: rotate(0deg) scale(0.7) skew(1deg);
+}}
+@keyframes suntory-alo-circle-img-anim{
+    0% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}
+/****************************/
+.row-negative-bottom {
+    margin-bottom: -30px;
+}
+.grid, .grid--rev, .grid--full, .grid-uniform {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+}
+*, input, :before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/********biểu định kiểu tác nhân người dùng*********/
+div {
+    display: block;
+}
+body, input, textarea, button, select {
+    font-size: 12px;
+    line-height: 1.6;
+    font-family: Roboto;
+    color: #585858;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+*, input, :before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.grid:after, .grid--rev:after, .grid--full:after, .grid-uniform:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*, input, :before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*******Produce-item*********/
+.wrapper {
+    padding: 10px;
+}
+.products ul {
+    display: table;
+}
+
+.products ul .main-product {
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    display: table-cell;
+    float: left;
+    width: 24%;
+}
+.main-product{
+    position: relative;
+    display: flex;
+    object-fit: cover;
+    object-position: center;
+
+}
+.products ul .no-margin {
+    margin-right: 0;
+}
+a.linkinfo{
+    text-decoration: none!important;
+    font-size:14px ;
+}
+.products ul .img-product img {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    object-fit: cover;
+
+}
+.products.section-header{
+    color: black;
+    margin-bottom: 20px;
+}
+.products.section-header--right {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    width: 335px;
+}
+.content-product .content-product-h3 {
+    padding: .5rem 0;
+    overflow: hidden;
+    color: #222;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Roboto;
+    max-height: 50px;
+    min-height: 50px;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0 0 5px;
+}
+
+.content-product .content-product-deltals {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.main-product .content-product .content-product-deltals .price {
+    color: black;
+    font-weight: 700;
+    margin-right: 1rem;
+    vertical-align: middle;
+    font-size: 22px;
+    line-height: 22px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+.content-product .content-product-deltals .price .money {
+    vertical-align: middle;
+}
+.content-product .content-product-deltals .price .money-lienhe {
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 900;
+    padding: 0 8px;
+    border-radius: 3px;
+    vertical-align: text-bottom;
+    color: #35bcaf;
+    border: 2px solid #35bcaf;
+    font-family: Roboto;
+}
+
+.content-product .content-product-deltals .btn-cart {
+    background: #f1df11;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.content-product .content-product-deltals .btn-cart:hover {
+    background: #c7b200;
+}
+
+
+.h1{
+    font-size: 1.733em;
+    line-height: 1.4;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.section-header--right{
+    text-align: right;
+}
+.section-header--left{
+    text-align: left;
+}
+@media (max-width: 576px) {
+    .section-header--right{
+        text-align: left!important;
+    }
 }

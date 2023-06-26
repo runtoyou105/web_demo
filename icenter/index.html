@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
 
@@ -10,25 +10,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
             integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" type="text/css" href="https://hstatic.net/0/global/design/member/fonts/roboto.css">
-    <link href="//theme.hstatic.net/1000016460/1000662255/14/sm-simple.css?v=144" rel="stylesheet" type="text/css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"></link>
     <link rel="stylesheet" href="body.css"></link>
     <link rel="stylesheet" href="style.css"></link>
     <link rel="stylesheet" href="header.css"></link>
     <link rel="stylesheet" href="navigation.css"></link>
+    <link rel="stylesheet" href="slides.css"></link>
+    <link rel="stylesheet" href="footer.css"></link>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 </head>
-<body onload="Java">
-<div class="wrap">
-    <div class="col-12">
-        <header class="main-header mt-5 mt-md-0">
-            <div class="row notes">
-                <div class="col-lg-12">
+<body>
+<div class="">
+     <header class="main-header mt-5 mt-md-0">
+            <div class="row notes wrap ">
+                <div class="col-lg-12 d-lg-none d-none">
                     <div class="row cart-header">
                         GIỎ HÀNG CỦA BẠN CÒN TRỐNG
                     </div>
@@ -37,18 +41,17 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 text-center text-md-start">
-                    <img src="https://theme.hstatic.net/1000016460/1000662255/14/logo.png?v=144" alt="">
+            <div class="row wrap col-lg-12 offset-lg-6">
+                <div class="col-12 col-lg-6 text-center text-md-start p-3">
+                    <img class="w-sm-100" src="https://theme.hstatic.net/1000016460/1000662255/14/logo.png?v=144" alt="">
                 </div>
-
                 <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-5 offset-7 sign-in-out text-end">
+                    <div class="row d-none d-md-inline">
+                        <div class="col-lg-5 offset-lg-7 sign-in-out text-end">
                             <a href="#" class="sign-in">Đăng nhập </a> hoặc <a href="#" class="sign-in"> Đăng ký</a>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row pb-4">
                         <div class="col-lg-7">
                             <div class="search-box col-sm-12 d-none d-md-inline">
                                 <input type="text" placeholder="Bạn cần tìm gì trên trang">
@@ -57,97 +60,499 @@
                         </div>
                         <div class="col-lg-5 text-end">
                             <button class="cart">
-                                <i class="icon icon-shopping-cart"><a class="navbar-brand" href="#">Cart</a></i><span class="d-none d-md-inline">Giỏ hàng</span>
+                                <i class="icon icon-shopping-cart"><a class="navbar-brand" href="#">Cart</a></i><span
+                                    class="d-none d-md-inline">Giỏ hàng</span>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-    </div>
-</div>
-<nav class="main-nav">
-    <div class="wrap">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
 
-                <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="white" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
-                    </svg><a class="navbar-brand" href="#">Menu</a>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-lg-0 text-center">
-                        <li class="nav-item search">
-                            <div class="col-lg-7">
-                                <div class="search-box col-sm-12 d-md-inline">
-                                    <input class="task" type="text" placeholder="Bạn cần tìm gì trên trang">
-                                    <i class="icon icon-search"></i>
-                                </div>
+            <nav class="main-nav">
+                <div class="wrapnav wrap ">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid p-0">
+                            <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="white"
+                                     viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                                </svg>
+                                <a class="navbar-brand" href="#">Menu</a>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="z-index:100">
+                                <ul class="navbar-nav me-auto mb-lg-0 text-center">
+                                    <li class="nav-item search d-lg-none" id="searchbox">
+                                        <div class="col-lg-7 d-lg-none">
+                                            <div class="search-box col-sm-12 d-md-inline">
+                                                <input class="task" type="text" placeholder="Bạn cần tìm gì trên trang">
+                                                <i class="icon icon-search"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item p-0">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown p-0">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown SP" role="button"
+                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                            Sản phẩm <i class="fa fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu text-center p-0" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">iPhone</a></li>
+                                            <li><a class="dropdown-item" href="#">iPad</a></li>
+                                            <li><a class="dropdown-item" href="#">iMac</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown p-0">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown PK" role="button"
+                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                            Phụ kiện <i class="fa fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu text-center p-0" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Phụ kiện Apple</a></li>
+                                            <li><a class="dropdown-item" href="#">Apple TV 4K</a></li>
+                                            <li><a class="dropdown-item" href="#">Phụ kiện Apple Watch chính hãng </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown p-0">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown LK" role="button"
+                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                            Sửa chữa <i class="fa fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu text-center p-0" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Linh kiện chính hãng Apple</a></li>
+                                            <li><a class="dropdown-item" href="#">Linh kiện chính hãng Oppo</a></li>
+                                            <li><a class="dropdown-item" href="#">Sửa chữa iPhone</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown p-0">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown TH" role="button"
+                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                            Thương hiệu <i class="fa fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu text-center p-0" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">UAG cho iPhone</a></li>
+                                            <li><a class="dropdown-item" href="#">UAG cho iPad</a></li>
+                                            <li><a class="dropdown-item" href="#">UAG cho Apple Watch</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item p-0">
+                                        <a class="nav-link active" aria-current="page" href="#">Liên hệ</a>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item dropdown p-0">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Sản phẩm <i class="fa fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu text-center p-0" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">iPhone</a></li>
-                                <li><a class="dropdown-item" href="#">iPad</a></li>
-                                <li><a class="dropdown-item" href="#">iMac</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Phụ kiện <i class="fa fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu text-center p-0" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Phụ kiện Apple</a></li>
-                                <li><a class="dropdown-item" href="#">Apple TV 4K</a></li>
-                                <li><a class="dropdown-item" href="#">Phụ kiện Apple Watch chính hãng </a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Sửa chữa <i class="fa fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu text-center p-0" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Linh kiện chính hãng Apple</a></li>
-                                <li><a class="dropdown-item" href="#">Linh kiện chính hãng Oppo</a></li>
-                                <li><a class="dropdown-item" href="#">Sửa chữa iPhone</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Thương hiệu <i class="fa fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu text-center p-0" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">UAG cho iPhone</a></li>
-                                <li><a class="dropdown-item" href="#">UAG cho iPad</a></li>
-                                <li><a class="dropdown-item" href="#">UAG cho Apple Watch</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Liên hệ</a>
-                        </li>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+        </header>
 
-                    </ul>
+    <!----------------------------------- Navbar ------------------------------->
+
+    
+<!------------------------------------------Slides ------------------------>
+<div class="slidebar d-lg-block wrap p-4" >
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner ">
+                <div class="carousel-item active">
+                  <img src="https://theme.hstatic.net/1000016460/1000662255/14/slide_1.jpg?v=144" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://theme.hstatic.net/1000016460/1000662255/14/slide_2.jpg?v=144" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://theme.hstatic.net/1000016460/1000662255/14/slide_4.jpg?v=144" class="d-block w-100" alt="...">    
+                </div>
+                 <div class="carousel-item">
+                  <img src="https://theme.hstatic.net/1000016460/1000662255/14/slide_5.jpg?v=144" class="d-block w-100" alt="...">    
+                </div>
+                 <div class="carousel-item">
+                  <img src="https://theme.hstatic.net/1000016460/1000662255/14/slide_6.jpg?v=144" class="d-block w-100" alt="...">    
+                </div>
+
+          </div>
+          <div class="carousel-indicators " style="position:static; margin-top: 5% "  >
+                <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" arial-label="Slide 1"></button>
+                <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 2"></button>
+                <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 3"></button>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+           
+</div>
+<!------------------------------------------End Slides ------------------------>
+
+<!------------------------------------------Products--------------------->
+<div class="main wrap p-4">
+    <section class="products">
+        <section>
+            <!-- ---------------------------Iphone------------------------- -->
+            <div class="col-12 section-header">
+                <p class="h1 col-6 section-header--left">iPhone</p>
+                <div class="col-6 offset-lg-6 offset-sm-12 section-header--right">
+                    <a class="linkinfo" href="/collections/iphone">Xem thêm iphone ›</a>
                 </div>
             </div>
-        </nav>
-    </div>
-    <div class="slidebar">
+            <div class="products">
+                <div class="row">
+                    <div class="col-6 col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/638138668784040702_iphone-14-dd_f1a62720ce9f4b36a80945eea2e292ba_large.jpg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">IPHONE 14 128GB BẢN QUỐC TẾ</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">17,299,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6  col-lg-2 col-md-2">
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/638138668784040702_iphone-14-dd_f1a62720ce9f4b36a80945eea2e292ba_large.jpg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">IPHONE 14 256GB BẢN QUỐC TẾ</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">19,399,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6  col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/638138668784040702_iphone-14-dd_f1a62720ce9f4b36a80945eea2e292ba_large.jpg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">IPHONE 14 512GB BẢN QUỐC TẾ</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money-lienhe">Liên Hệ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    </div>
-<!--    <a href="tel:0909506868" class="suntory-alo-phone suntory-alo-green visible-xs" id="suntory-alo-phoneIcon" style="left: -10px;bottom: 40px;">-->
-<!--        <span class="call-now-new"></span>-->
-<!--        <div class="suntory-alo-ph-circle"></div>-->
-<!--        <div class="suntory-alo-ph-circle-fill"></div>-->
-<!--        <div class="suntory-alo-ph-img-circle"><img src="//theme.hstatic.net/1000016460/1000662255/14/phone.png?v=144"></div>-->
-<!--    </a>-->
-</nav>
-</body>
+                    <div class="col-6  col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/638138668784040702_iphone-14-dd_f1a62720ce9f4b36a80945eea2e292ba_large.jpg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">IPHONE 14 512GB BẢN QUỐC TẾ</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money-lienhe">Liên Hệ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/638138668784040702_iphone-14-dd_f1a62720ce9f4b36a80945eea2e292ba_large.jpg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">IPHONE 14 128GB BẢN QUỐC TẾ</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">17,299,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/638138668784040702_iphone-14-dd_f1a62720ce9f4b36a80945eea2e292ba_large.jpg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">IPHONE 14 128GB BẢN QUỐC TẾ</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">17,299,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------------------------------EndIphone -->
+
+<div class="col-12 section-header">
+    <p class="h1 col-6 section-header--left">IPad</p>
+        <div class="col-6 offset-lg-6 offset-sm-12 section-header--right">
+            <a class="linkinfo" href="/collections/iphone">Xem thêm ipad ›</a>
+        </div>
+            </div>
+            <div class="products">
+                <div class="row">
+                    <div class="col-6 col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/index_d05bab7410794290b248571df16eeacb_large.png"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">iPad Pro 11inch 512GB Wifi + Cellular/4G Model 2018. Tặng loa JBL OnAir Wireless chính hãng trị giá 3tr699</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">17,299,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6  col-lg-2 col-md-2">
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/ipad-2022-hero-landing-wifi_98149e4c876d46c6b3700e51ca60610b_large.jpeg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">iPad Pro 11inch 512GB Wifi + Cellular/4G Model 2018. Tặng loa JBL OnAir Wireless chính hãng trị giá 3tr699</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">19,399,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6  col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/index_d05bab7410794290b248571df16eeacb_large.png"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">iPad Pro 11inch 512GB Wifi + Cellular/4G Model 2018. Tặng loa JBL OnAir Wireless chính hãng trị giá 3tr699</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money-lienhe">Liên Hệ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6  col-lg-2 col-md-2">
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/ipad-2022-hero-landing-wifi_98149e4c876d46c6b3700e51ca60610b_large.jpeg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">iPad Pro 11inch 512GB Wifi + Cellular/4G Model 2018. Tặng loa JBL OnAir Wireless chính hãng trị giá 3tr699</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">19,399,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/index_d05bab7410794290b248571df16eeacb_large.png"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">iPad Pro 11inch 512GB Wifi + Cellular/4G Model 2018. Tặng loa JBL OnAir Wireless chính hãng trị giá 3tr699</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">17,299,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/index_d05bab7410794290b248571df16eeacb_large.png"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">iPad Pro 11inch 512GB Wifi + Cellular/4G Model 2018. Tặng loa JBL OnAir Wireless chính hãng trị giá 3tr699</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">17,299,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -----------------------------------------EndiPad -->
+
+<div class="col-12 section-header">
+                <p class="h1 col-6 section-header--left">MAC</p>
+                <div class="col-6 offset-lg-6 offset-sm-12 section-header--right">
+                    <a class="linkinfo" href="/collections/iphone">Xem thêm mac ›</a>
+                </div>
+            </div>
+            <div class="products">
+                <div class="row">
+                    <div class="col-6 col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/mba15-midnight-gallery1-202306_909c23f733ec407e956facebc4c33519_large.jpeg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">MacBook Pro 14 inch M1 Pro 2021 16GB/512GB ( Silver/ MKGR3) Hàng CPO</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">39,099,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/mba15-midnight-gallery1-202306_909c23f733ec407e956facebc4c33519_large.jpeg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">MacBook Pro 14 inch M1 Pro 2021 16GB/512GB ( Silver/ MKGR3) Hàng CPO</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">39,099,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/mba15-midnight-gallery1-202306_909c23f733ec407e956facebc4c33519_large.jpeg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">MacBook Pro 14 inch M1 Pro 2021 16GB/512GB ( Silver/ MKGR3) Hàng CPO</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">39,099,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/mba15-midnight-gallery1-202306_909c23f733ec407e956facebc4c33519_large.jpeg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">MacBook Pro 14 inch M1 Pro 2021 16GB/512GB ( Silver/ MKGR3) Hàng CPO</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">39,099,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/mbp14-spacegray-select-202301_459793c980e64332b58d7de7f788fbce_large.jpeg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">MacBook Pro 14 inch M1 Pro 2021 16GB/512GB ( Silver/ MKGR3) Hàng CPO</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">39,099,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-2 col-md-2" >
+                        <div class="img-product">
+                            <img class="img-prd w-100 object-fit-cover"
+                                 src="https://product.hstatic.net/1000016460/product/mbp14-spacegray-select-202301_459793c980e64332b58d7de7f788fbce_large.jpeg"
+                                 alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">MacBook Pro 14 inch M1 Pro 2021 16GB/512GB ( Silver/ MKGR3) Hàng CPO</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">39,099,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- --------------------------------------------EndMAC -->
+                </div>
+            </div>
+        </section>
+    </section>
+</div>
+ 
+<!------------------------------- End-------------------- -->
+
+    <aside class="aside aside-1">
+        <div class="ballpoint">
+            <a href="tel:0909506868" class="suntory-alo-phone suntory-alo-green visible-xs" id="suntory-alo-phoneIcon"
+               style="left: -10px;bottom: 40px;">
+                <span class="call-now-new"></span>
+                <div class="suntory-alo-ph-circle"></div>
+                <div class="suntory-alo-ph-circle-fill"></div>
+                <div class="suntory-alo-ph-img-circle">
+                    <img class="img-circle"src="https://theme.hstatic.net/1000016460/1000662255/14/phone.png?v=144"></div>
+            </a>
+        </div>
+    </aside>
+    <aside class="aside aside-2">   </aside>   
+
+
+    <footer class="footer-flex-2" style="background-color: #f2f2f2;">  
+        <div class="wrap row">
+            <div class="link col-xs-6 col-sm-3 text-center ">
+                <p>LIÊN KẾT NHANH</p>
+                <p> NHANH</p>
+                <p>LIÊN KẾT </p>
+                <p>LIÊN KẾT </p>
+                <p>LIÊN KẾT </p>
+                <p>LIÊN  NHANH</p>
+
+            </div>
+            
+            <div class="info col-xs-6 col-sm-3 text-center ">
+                <p>THÔNG TIN LIÊN HỆ</p>
+                <p>THÔNG HỆ</p>
+                <p>THÔNG </p>
+                <p>THÔNG </p>
+                <p>THÔNG TIN LIÊN HỆ</p>
+                <p>THÔNG  HỆ</p>
+                <p>THÔNG TIN LIÊN HỆ</p>
+
+            </div>
+        </div>
+    </footer>
+
+
+</div>
+</body >
 </html>

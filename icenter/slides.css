@@ -1,0 +1,39 @@
+
+.carousel-indicators [data-bs-target] {
+    display: block;
+    border: 2px  #35bcaf solid;
+    border-radius: 3px;
+    width: 8px;
+    height:8px;
+    border-radius: 8px ;
+    position: none!important;
+}
+@media (max-width:576px){
+   
+}
+.slidebar.carousel-indicators{
+    margin-top: 20px;
+    position:none !important;
+    z-index: 0;
+}
+
+.carousel-inner {
+  height: 0;
+  padding-bottom: 50%; /* this sets carousel aspect ratio (4:1 here) */
+  display: block;
+}
+
+
+.carousel-item img {
+  height: 100%; /* Bootstrap handles width already */
+  object-fit: scale-down; /* or 'contain' if you want stretch instead of crop */
+}
+
+.slidebar{
+    overflow: hidden;
+    z-index: 0;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    color: grey;
+}
