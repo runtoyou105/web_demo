@@ -30,3 +30,29 @@
 .footer-item .social-footer li:last-child {
     margin-left: .5rem;
 }
+
+.link >p, .info >p{
+    font-weight: 700;
+}
+.link.div{
+
+}
+.info>img{
+
+}
+@media only screen and (max-width:550px)
+{
+    .footer-flex-2{
+        text-align: center!important;
+    }
+}
+.slogan >p {
+    padding:0px 10px;
+    position: fixed;
+    z-index: 1000;
+    color: red;
+    font-style: italic;
+    bottom: 0;
+    background-color: #f2f2f2;
+    margin:10px;
+}
